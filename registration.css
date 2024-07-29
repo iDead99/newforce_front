@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    /* background: white; */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: container-display 2s ease;
+}
+@keyframes container-display {
+    from{
+        opacity: 0;
+    }
+}
+
+.container h4 {
+    text-align: center;
+    color: #4CAF50;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-top: none;
+    border-bottom: 1px solid rgb(167, 167, 167);
+    border-left: none;
+    border-right: none;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+.form-group input:focus{
+    border: 2px solid green;
+}
+
+.form-group input[type="submit"] {
+    width: calc(100% - 20px);
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#confirm-registration{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: confirm-display 2s ease;
+}
+@keyframes confirm-display {
+    from{
+        opacity: 0;
+    }
+}
+
+#ok-btn{
+    width: 50px;
+    margin-bottom: 10px;
+    padding: 3px;
+    color: white;
+    background-color: #25D366;
+    border: 2px solid white;
+    font-size: 15px;
+    font-weight: bold;
+}
+#ok-btn:hover{
+    background-color: #1ac057;
+}
+
+#invite{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 15px;
+    padding-right: 15px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: invite-display 2s ease;
+}
+@keyframes invite-display {
+    from{
+        opacity: 0;
+    }
+}
+
+#link-container{
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#link-txt{
+    border: 1px solid grey;
+    text-align: center;
+    width: fit-content;
+    padding: 5px;
+    color: black;
+    background-color: gainsboro;
+}
+#copy-btn{
+    border: 1px solid rgb(180, 180, 180);
+    font-size: 15px;
+    margin-left: 5px;
+    padding: 4px;
+}
+
+#copy-btn:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.whatsapp-contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-contact a {
+    color: #25D366;
+    font-size: 18px;
+}

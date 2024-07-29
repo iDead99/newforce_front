@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The New Force - User Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    <div class="container">
+        <h4>@uew chapter<big>||</big></h4>
+        <h1>Register for The New Force</h1>
+        <form id="form" method="POST">
+            <div class="form-group">
+                <input type="text" id="first-name" name="first-name" required placeholder="First name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="last-name" name="last-name" required placeholder="Last name">
+            </div>
+            <div class="form-group">
+                <input type="text" id="department" name="department" required placeholder="Department">
+            </div>
+            <div class="form-group">
+                <input type="tel" id="level" name="level" required placeholder="Level" minlength="3" maxlength="3">
+            </div>
+            <div class="form-group">
+                <!-- <label for="hall">Are you at the hall?</label> -->
+                <!-- <select name="hall" id="hall"></select> -->
+                <input type="text" id="hall" name="hall" placeholder="Hall (Optional)">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" required placeholder="Phone number" minlength="10" maxlength="10">
+            </div>
+            <div class="form-group">
+                <input id="submit-btn" type="submit" value="Register">
+            </div>
+        </form>
+        <div class="whatsapp-contact">
+            <a href="https://wa.me/+233247098016" target="_blank">
+                Contact us on WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <div id="confirm-registration" style="display: none;">
+        <h2>Registered successfully</h2>
+        <button id="ok-btn">OK</button>
+    </div>
+
+    <div id="invite" style="display: none;">
+        <p>Please you can copy and send the link to other members to join😊<p>
+            <div id="link-container">
+                <p id="link-txt">http://127.0.0.1:5500/registration.html</p>
+                <button id="copy-btn">Copy</button>
+            </div>
+            <a href="registration.html" style="text-decoration: none;">Home</a>
+            
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+
+</html>
